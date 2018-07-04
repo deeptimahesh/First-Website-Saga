@@ -1,0 +1,71 @@
+/*----- Menu Outline -----*/
+body{
+background: #2F4F4F
+}
+.tmenu {
+    width:100%;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
+    background:black;
+        height:72px;
+margin-left:none;
+/*      overflow: hidden;
+    position: fixed;
+    bottom: 0;   */
+}
+#othercontent {
+        color:white;
+}
+
+#stickyalias {
+      display: none;
+      height: 10px;
+                }
+
+.menu {
+    width:1000px;
+    margin:0px auto;
+}
+
+.menu li {
+    margin:0px;
+    list-style:none;
+    font-family:'Ek Mukta';
+}
+.menu a {
+    transition:all linear 0.15s;
+    color:#fff;
+}
+
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    color:white;
+}
+
+.menu .arrow {
+    font-size:23px;
+    line-height:0%;
+}
+
+
+
+
+/*----- Top Level -----*/
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:22px;
+}
+
+.menu > ul > li > a {
+    padding:5px 40px;
+    display:inline-block;
+    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+}
+
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:#2F4F4F;
+}
+.aaa {
+font-size: 40px;
+} 

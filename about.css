@@ -1,0 +1,166 @@
+/*----- Menu Outline -----*/
+.tmenu {
+    z-index: 10;
+    width:100%;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
+    background:#3e3436;
+        height:72px;
+margin-left:none;
+    /*overflow: hidden;*/
+    position: fixed; 
+}
+#othercontent {
+        color:white;
+}
+
+
+
+#stickyalias {
+      display: none;
+      height: 10px;
+                }
+
+.menu {
+    width:1500px;
+    margin:0px auto;
+}
+
+.menu li {
+    margin:0px;
+    list-style:none;
+    font-family:'Ek Mukta';
+}
+
+.menu a {
+    transition:all linear 0.15s;
+    color:#fff;
+}
+
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    color:white;
+}
+
+.menu .arrow {
+    font-size:23px;
+    line-height:0%;
+}
+
+
+
+
+/*----- Top Level -----*/
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:22px;
+}
+
+
+
+
+.menu > ul > li > a {
+    padding:5px 40px;
+    display:inline-block;
+    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+}
+
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:red;
+}
+
+
+/*----- Bottom Level -----*/
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+
+.sub-menu {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:red;
+}
+
+.sub-menu li {
+    display:block;
+    font-size:16px;
+}
+
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+}
+
+/*-----------------------REST OF THE PAGE--------------------*/
+body, html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+.pimg1, .pimg2, .pimg3, .pimg4 {
+  opacity:0.80;
+  position: relative;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  background-attachment:fixed; /* to remove this effect use scroll instead of fixed   */
+}
+
+.pimg1 {
+  background-image: url("https://wallpaperscraft.com/image/trees_starry_sky_stars_space_118049_1920x1080.jpg");
+  min-height: 100%;
+}
+.pimg2 {
+  background-image: url("https://wallpaperscraft.com/image/stars_sky_shore_84534_1920x1080.jpg");
+  min-height: 400px;
+  
+}
+
+.pimg3 {
+  background-image: url("https://wallpaperscraft.com/image/milky_way_stars_mountains_night_germany_bavaria_sky_45888_1920x1080.jpg");
+  min-height: 400px;
+}
+
+
+.section {
+  text-align:center;
+  padding: 50px 80px;
+}
+
+.section-dark {
+  background-color:#f4f4f4;
+  color:#666;
+}
+.section-dark {
+  background-color:#282e34;
+  color:#ddd;
+}
+.ptext {
+  position: absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform: uppercase;
+}
+
+h3 a {
+  color: white;
+}
+

@@ -1,0 +1,30 @@
+* { 
+  box-sizing: border-box; 
+}
+html {
+  margin: 0;
+  background-size: cover;
+  background: url("szVeAm.jpg") no-repeat center center fixed;
+  background-blend-mode: darken;
+  transition: 4s;
+}
+body { margin: 0; }
+div#texttop { 
+	color: black;
+	width: 30%;
+	margin-top: 5%;
+	margin-left: 5%;
+	padding: 2rem;
+	border: 4px double rgba(255,255,255,0.3);
+	background-color: #fff;
+    background-color: rgba(255,255,255,0.5);
+	font-family: Oxygen, sans-serif;
+	float:right;
+}
+@media all and (max-width: 770px) {
+	div#texttop { display: none; }
+	height: 100px;
+	
+}
+
+
